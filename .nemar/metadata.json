@@ -1,38 +1,138 @@
 {
   "version": "2.0",
-  "dataset_id": "on000247",
-  "source": "openneuro",
-  "source_id": "ds000247",
+  "pipeline_stage": "enriched",
   "title": "MEG-BIDS OMEGA RestingState_sample",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Guiomar Niso": {},
     "Jeremy Moreau": {},
     "Elizabeth Bock": {},
     "Francois Tadel": {},
-    "Sylvain Baillet": {}
+    "Sylvain Baillet": {
+      "orcid": "0000-0002-6762-5713"
+    }
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds000247.v1.0.2",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2015.04.028. ",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on000247",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on000247",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2015.04.028",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1038/sdata.2018.110",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.0.2",
-  "recording_modality": [
-    "anat",
-    "meg"
-  ],
-  "datatypes": [
-    "anat",
-    "meg"
   ],
   "funding_references": [
     {
-      "funder_name": "Quebec Bioimaging Network Strategic Initiative (QBIN 5886)"
+      "funder_name": "Quebec Bioimaging Network",
+      "award_number": "QBIN 5886"
     }
-  ]
+  ],
+  "modalities": [
+    "anat",
+    "meg"
+  ],
+  "resource_type_specific": "Structural MRI Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".acq",
+    ".annot",
+    ".bak",
+    ".cfg",
+    ".cls",
+    ".de",
+    ".ds/BadChannels",
+    ".dsc",
+    ".gitattributes",
+    ".gz",
+    ".hc",
+    ".hist",
+    ".infods",
+    ".json",
+    ".md",
+    ".meg4",
+    ".mgz",
+    ".newds",
+    ".pial",
+    ".pos",
+    ".reg",
+    ".res4",
+    ".segments",
+    ".tsv",
+    ".white"
+  ],
+  "description": "The OMEGA Resting State Sample Dataset comprises magnetoencephalography (MEG) recordings from 5 subjects during 5-minute eyes-open resting state sessions acquired at the Montreal Neurological Institute between 2012-2016 using a CTF 275 system. The dataset includes defaced structural T1-weighted MRI images, 3D head digitization data, and comprehensive MEG recordings with reference sensors and physiological monitoring channels, organized according to the MEG-BIDS specification.",
+  "methods_description": "MEG data were acquired using a CTF 275 MEG system at 2400 Hz sampling rate with anti-aliasing low-pass filter at 600 Hz. Recordings included 26 MEG reference sensors, 270 MEG axial gradiometers, and physiological channels (ECG, vertical and horizontal EOG). Head shape and fiducial points were obtained via 3D digitization using a Polhemus Fastrak device. Structural T1-weighted images were processed with FreeSurfer 5.3.",
+  "keywords": [
+    {
+      "term": "Magnetoencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
+    },
+    {
+      "term": "resting state",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D012146"
+    },
+    {
+      "term": "brain imaging",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001931"
+    },
+    {
+      "term": "neuroimaging",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D059906"
+    },
+    {
+      "term": "BIDS"
+    },
+    {
+      "term": "structural MRI"
+    },
+    {
+      "term": "T1-weighted"
+    },
+    {
+      "term": "CTF 275"
+    },
+    {
+      "term": "head digitization"
+    },
+    {
+      "term": "FreeSurfer"
+    },
+    {
+      "term": "Montreal Neurological Institute"
+    },
+    {
+      "term": "eyes-open resting state"
+    }
+  ],
+  "source_hash": "284417bc1e47c00f965ef39d1a11ac4862577fdc98f804baa658be6016c00638"
 }

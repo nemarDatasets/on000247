@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "MEG-BIDS OMEGA RestingState_sample",
-  "description": "The OMEGA Resting State Sample Dataset comprises magnetoencephalography (MEG) recordings from 5 subjects during 5-minute eyes-open resting state sessions, acquired using a CTF 275 system at the Montreal Neurological Institute. The dataset includes high-resolution MEG data with reference sensors and axial gradiometers, concurrent physiological recordings (ECG and EOG), 3D head digitization, and structural T1-weighted MRI images processed with FreeSurfer 5.3. Data are organized according to the MEG-BIDS specification and serve as a reference resource for MEG methodology and resting-state neuroimaging research.",
-  "methods_description": "MEG data were recorded at the Montreal Neurological Institute (2012-2016) using a CTF 275 MEG system at 2400 Hz sampling rate with anti-aliasing low-pass filter at 600 Hz. Recordings included 26 MEG reference sensors, 270 MEG axial gradiometers, and bipolar ECG and EOG channels. Head shape and fiducial points were obtained via 3D digitization using a Polhemus Fastrak device. Structural T1 images were acquired and processed with FreeSurfer 5.3.",
+  "description": "A sample resting-state MEG dataset from the Open MEG Archive (OMEGA), containing 5-minute eyes-open recordings from five subjects. Data were acquired at the Montreal Neurological Institute with a 275-channel CTF MEG system and include head shape digitization and defaced structural T1 images processed with FreeSurfer. The dataset is organized according to the MEG-BIDS specification.",
+  "methods_description": "Recordings were made with a CTF 275 MEG system at a 2400 Hz sampling rate with a 600 Hz anti-aliasing low-pass filter. Channels included MEG reference sensors, axial gradiometers, and ECG and EOG bipolar channels. Head shape and fiducial points were digitized with a Polhemus Fastrak device driven by Brainstorm. Structural T1 images were defaced and processed with FreeSurfer 5.3.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -28,28 +28,13 @@
       "term": "resting state"
     },
     {
-      "term": "brain imaging"
+      "term": "eyes open"
     },
     {
-      "term": "BIDS"
+      "term": "open data archive"
     },
     {
-      "term": "neuroimaging"
-    },
-    {
-      "term": "CTF 275"
-    },
-    {
-      "term": "eyes-open"
-    },
-    {
-      "term": "FreeSurfer"
-    },
-    {
-      "term": "head digitization"
-    },
-    {
-      "term": "Montreal Neurological Institute"
+      "term": "OMEGA"
     }
   ],
   "related_identifiers": [
@@ -64,29 +49,29 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on000247",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.1016/j.neuroimage.2015.04.028",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "10.1038/sdata.2018.110",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "10.18112/openneuro.ds000247.v1.0.2",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on000247",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
     {
-      "funder_name": "Quebec Bioimaging Network",
+      "funder_name": "Quebec Bioimaging Network Strategic Initiative",
       "award_number": "QBIN 5886"
     }
   ],
@@ -96,7 +81,7 @@
     "meg"
   ],
   "sizes": [
-    "11.3 GB (213 files)"
+    "10.49 GB (213 files)"
   ],
   "formats": [
     ".acq",
